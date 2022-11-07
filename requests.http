@@ -1,0 +1,69 @@
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2Njc5MzgzMzF9.ncnIHunb8IDJoeBfnU-diNDsRzA9bkjj8mv_ZHPGElM
+
+### show all users
+get http://localhost:3000/users.json
+
+### show particular user
+get http://localhost:3000/users/2.json
+
+### create new user
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "name": "Craig",
+  "height": 80,
+  "image_url": "test.jpg",
+  "password": "password",
+  "email": "craig@test.com"
+}
+
+### delete a user 
+DELETE http://localhost:3000/users/2.json
+Content-Type: application/json
+
+### show all exercises
+get http://localhost:3000/exercises.json
+
+
+### show a particular exercise
+get http://localhost:3000/exercises/2.json
+
+### show all workouts
+get http://localhost:3000/workouts.json
+
+### show a particular workout
+get http://localhost:3000/workouts/1.json
+
+### create a workout 
+POST http://localhost:3000/workouts
+Authorization: Bearer {{jwt}}
+Content-Type: application/json
+
+{
+  "title": "Test Workout",
+  "user_id": 4
+}
+
+### update a workout
+PATCH http://localhost:3000/workouts/1.json
+Content-Type: application/json
+
+{
+"title": "New name",
+"user_id": 1
+}
+
+### delete a workout
+DELETE http://localhost:3000/workouts/1.json
+Content-Type: application/json
+
+
+### Sessions create (login)
+POST http://localhost:3000/sessions.json
+Content-Type: application/json
+
+{
+  "email": "marcus@test.com",
+  "password": "password"
+}

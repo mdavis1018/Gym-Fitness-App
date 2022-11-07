@@ -90,3 +90,6 @@ Authorization: Bearer {{jwt}}
   "weight": 100,
   "sets": 3
 }
+
+### all categories
+GET http://localhost:3000/categories.json

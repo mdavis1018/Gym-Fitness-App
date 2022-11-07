@@ -15,4 +15,12 @@ class WorkoutDetailsController < ApplicationController
     render json: { errors: details.errors.full_messages }, status: :bad_request
  end
   end
+
+  def destroy
+  workout = Workout.find_by(id: params[:id])
+  if workout.destroy
+    render json: {message: "workout deleted!"}
+  else
+    render json: { errors: workout.errors.full_messages }, status: :bad_request
+  end
 end

@@ -10,4 +10,6 @@ Rails.application.routes.draw do
   resources :workouts
   
   resources :sessions
+
+  resources :workout_details
 end

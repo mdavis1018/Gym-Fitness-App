@@ -89,13 +89,20 @@ User.create!(
 Workout.create!(
   title: "Chest Day",
   user_id: 1,
+  status: true
 )
 
 Workout.create!(
   title: "Arm Day",
   user_id: 2,
+  status: false
 )
 
+Workout.create!(
+  title: "Leg Day",
+  user_id: 3,
+  status: true
+)
 Exercise.create!(
   name: "Bench Press", 
   description: "To grow your chest", category_id: 1,

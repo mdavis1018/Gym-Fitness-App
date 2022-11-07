@@ -1,4 +1,4 @@
-@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2Njc5MzgzMzF9.ncnIHunb8IDJoeBfnU-diNDsRzA9bkjj8mv_ZHPGElM
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2Njc5NDQ0MzR9.sZXH44zD0l5PfQSP_Ti_Sl33AMNtCAB8-cEYc4FLzus
 
 ### show all users
 get http://localhost:3000/users.json
@@ -16,6 +16,15 @@ Content-Type: application/json
   "image_url": "test.jpg",
   "password": "password",
   "email": "craig@test.com"
+}
+
+### update a user
+PATCH http://localhost:3000/users/4.json
+Authorization: Bearer {{jwt}}
+Content-Type: application/json
+
+{
+  "weight": 200
 }
 
 ### delete a user 
@@ -46,7 +55,8 @@ Content-Type: application/json
 }
 
 ### update a workout
-PATCH http://localhost:3000/workouts/1.json
+PATCH http://localhost:3000/workouts/2.json
+Authorization: Bearer {{jwt}}
 Content-Type: application/json
 
 {
@@ -66,4 +76,17 @@ Content-Type: application/json
 {
   "email": "marcus@test.com",
   "password": "password"
+}
+
+### create workout detail
+POST http://localhost:3000/workout_details.json
+Content-Type: application/json
+Authorization: Bearer {{jwt}}
+
+{
+  "workout_id": 1,
+  "exercise_id": 3,
+  "reps": 15,
+  "weight": 100,
+  "sets": 3
 }

@@ -14,4 +14,5 @@ Rails.application.routes.draw do
   resources :workout_details
   
   resources :categories
+  
 end

@@ -32,7 +32,7 @@ DELETE http://localhost:3000/users/2.json
 Content-Type: application/json
 
 ### show all exercises
-get http://localhost:3000/exercises.json
+get http://localhost:3000/exercises?category=Chest
 
 
 ### show a particular exercise

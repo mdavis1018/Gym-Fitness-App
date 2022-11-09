@@ -1,6 +1,12 @@
 class CategoriesController < ApplicationController
   def index
-  category = Category.all
-  render json: category.as_json
+  @categories = Category.all
+  render template: "Categories/index"
+  end
+
+  def show
+  category = Category.find_by(id: params[:id])
+  result = category.exercises
+  render json: result.as_json
   end
 end

@@ -1,0 +1,10 @@
+@categories.map do |category|
+  {
+    id: category.id,
+    title: category.title,
+    description: category.description,
+    image_url: category.image_url,
+    created_at: category.created_at,
+    updated_at: category.updated_at,
+  }
+end

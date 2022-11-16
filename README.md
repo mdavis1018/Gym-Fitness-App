@@ -8,9 +8,8 @@ One technology that I used in this project was the jb" gem. I recommend all deve
  ```
  rails generate jb #{Model-Name} 
 ``` 
+ you can generate all the information you need in just one call to the template. This works as long your associations models are functioning properly. 
 
-
-Optional: Add screenshots or gifs of your application
 
 This app is a fitness-app. It allows users to create workouts and choose from a list of exercises to add to their workout. Each workout can be scheduled for a particular date and the user can create a workout rotation/schedule. (Future: The app allows the user to set goals and track their progress. For example, if the user wants to lose/gain weight they can create a roadmap and then input data weekly and compare their stats with their created plan's trajectory and see if they are on track.)
 
@@ -37,28 +36,3 @@ You can test web requests as documented in the `requests.http` file.
 - allow the user to link to his spotify using the spotify API so they can show other users what music they listened to for a workout
 
 
-
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...

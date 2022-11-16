@@ -4,7 +4,8 @@ Describe your app here. (What is your 1 minute “elevator pitch” of your caps
 
 Describe the technologies you used to build your app (Ruby on Rails backend, React.js frontend, any libraries, APIs, etc.)
 
-One technology that I used in this project was the jb" gem. I recommend all developers to install this gem when making a backend using Rails because it greatly simplifies the calls you make on your frontend. For example, in one of my React.Js files I was trying to get the workouts/index, workouts_details/index days/index and users/index information. If I had made seperate calls to my backend using a different function each time using numerous different requests it would slow down my application and make my code look very messy. Instead, by using the jb files that are created when you run ``` Ruby
+One technology that I used in this project was the jb" gem. I recommend all developers to install this gem when making a backend using Rails because it greatly simplifies the calls you make on your frontend. For example, in one of my React.Js files I was trying to get the workouts/index, workouts_details/index days/index and users/index information. If I had made seperate calls to my backend using a different function each time using numerous different requests it would slow down my application and make my code look very messy. Instead, by using the jb files that are created when you run 
+ ```
  rails generate jb #{Model-Name} 
 ``` 
 

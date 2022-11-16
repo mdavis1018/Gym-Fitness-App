@@ -1,7 +1,5 @@
 # <Gym-Fitness-App>
 
-Describe your app here. (What is your 1 minute “elevator pitch” of your capstone project? What problem does it solve? What inspired you to build it?)
-
 This app is a fitness-app. It allows users to create workouts and choose from a list of exercises to add to their workout. Each workout can be scheduled for a particular date and the user can create a workout rotation/schedule. (Future: The app allows the user to set goals and track their progress. For example, if the user wants to lose/gain weight they can create a roadmap and then input data weekly and compare their stats with their created plan's trajectory and see if they are on track.)
 
 Describe the technologies you used to build your app (Ruby on Rails backend, React.js frontend, any libraries, APIs, etc.)
@@ -11,12 +9,16 @@ One technology that I used in this project was the jb" gem. I recommend all deve
  rails generate jb #{Model-Name} 
 ``` 
  you can generate all the information you need in just one call to the template. This works as long your associations models are functioning properly. 
-
+- PostgreSQL (my DB)
+- Ruby On Rails
+- 
 
 
 ## Installation
 
 ```bash
+git clone ""
+cd into the project
 bundle install
 rails db:create db:migrate db:seed
 ```
